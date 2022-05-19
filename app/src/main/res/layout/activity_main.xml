@@ -1,18 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="15dp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/nhatro360_logo"
+            android:layout_margin="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="20dp"
+            android:ems="50"
+            android:layout_marginBottom="15dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mat khau"
+            android:ems="50"
+            android:inputType="textPassword"
+            android:layout_marginBottom="15dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Đăng nhập"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu?"
+            android:textColor="#1b75ca"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoặc đăng nhập bằng tài khoản "
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zalo"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zalo"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Dang nhap voi Apple"
+            android:backgroundTint="#202124"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo tài khoản bằng Email"
+            android:textColor="#1b75ca"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
