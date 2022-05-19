@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "545392247750",
+    "project_id": "tromoiproject-1debe",
+    "storage_bucket": "tromoiproject-1debe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545392247750:android:ef0a4c5e5da3e0d21ba8c7",
+        "android_client_info": {
+          "package_name": "tdc.edu.tromoiproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545392247750-4neiii6adnp4bseqemme31d8rhmkcev1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxPkvQEX-DFkOLE7QOfwfQ1kBeckdPpDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545392247750-4neiii6adnp4bseqemme31d8rhmkcev1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
