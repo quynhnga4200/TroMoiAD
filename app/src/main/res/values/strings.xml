@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">TroMoiProject</string>
+    <string name="thanhpho">Tỉnh/Thành Phố</string>
+    <string name="quanhuyen">Quận/Huyện</string>
+    <string name="xaphuong">Phường/Xã</string>
+    <string name="sonha">Số nhà,tên đường</string>
+    <string name="formmap">Chọn từ bảng đồ</string>
+    <string name="quaylai">Quay lại</string>
+    <string name="dangtin">Đăng tin</string>
+    <string name="tieptheo">Tiếp theo</string>
+    <string name="tieudebaidang">Tiêu đề bài đăng</string>
+    <string name="lienhevoichu">Liên hệ với chủ</string>
+    <string name="sdt">Số điện thoại</string>
+    <string name="motachitiet">Mô tả chi tiết</string>
+    <string name="email">  Email</string>
+    <string name="register">  Tạo tài khoản</string>
+    <string name="mane">  Họ và tên</string>
+    <string name="phone">  Số điện thoại</string>
+    <string name="password">  Mật khẩu</string>
+    <string name="tk">  Tài khoản</string>
+    <string name="repass">  Nhập lại mật khẩu</string>
+    <string name="dieukhoan">*Bằng việc tiếp tục đăng tin nghĩa là bạn đã đồng ý với Điều khoản và Chính sách của chúng tôi.</string>
+    <string name="luuy">(Lưu ý : Số nhà , tên đường chọn từ bảng đồ có thể không chính xác , nên bạn có thể chỉnh sửa nhập lại thủ công)</string>
+    <string name="Email">Email: </string>
+    <string name="Sodt">Số điện thoại: </string>
 </resources>
