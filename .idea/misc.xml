@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/activity_main.xml" value="0.22870370370370371" />
         <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/controller_layout.xml" value="0.11302083333333333" />
+        <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/home_layout.xml" value="0.22870370370370371" />
+        <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/listview_layout.xml" value="0.22870370370370371" />
       </map>
     </option>
   </component>

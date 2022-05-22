@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "545392247750",
-    "project_id": "tromoiproject-1debe",
-    "storage_bucket": "tromoiproject-1debe.appspot.com"
+    "project_number": "421118123607",
+    "firebase_url": "https://fir-db-5aa05-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fir-db-5aa05",
+    "storage_bucket": "fir-db-5aa05.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:545392247750:android:ef0a4c5e5da3e0d21ba8c7",
+        "mobilesdk_app_id": "1:421118123607:android:c9daa58f50b372b2cacd12",
         "android_client_info": {
-          "package_name": "tdc.edu.tromoiproject"
+          "package_name": "vn.edu.tdc.projectandroid"
         }
       },
       "oauth_client": [
         {
-          "client_id": "545392247750-4neiii6adnp4bseqemme31d8rhmkcev1.apps.googleusercontent.com",
+          "client_id": "421118123607-9llcugnebpmrlikj0qtsvo6mnvkvh3au.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.edu.tdc.projectandroid",
+            "certificate_hash": "6ac8405b4dc2181df965293cfc941586b9f55c03"
+          }
+        },
+        {
+          "client_id": "421118123607-k2ugui3tfprjqjull8k85npuj5e32raj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAxPkvQEX-DFkOLE7QOfwfQ1kBeckdPpDo"
+          "current_key": "AIzaSyDwMIOG0m-MpauPhQtwKpNyX4-TWiXV7M4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "545392247750-4neiii6adnp4bseqemme31d8rhmkcev1.apps.googleusercontent.com",
+              "client_id": "421118123607-k2ugui3tfprjqjull8k85npuj5e32raj.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
