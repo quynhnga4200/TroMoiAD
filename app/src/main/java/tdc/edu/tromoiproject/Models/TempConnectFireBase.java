@@ -1,4 +1,4 @@
-package vn.edu.tdc.projectandroid.Models;
+package tdc.edu.tromoiproject.Models;
 
 import android.content.Context;
 import android.util.Log;
@@ -9,6 +9,10 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+
+import tdc.edu.tromoiproject.Models.CategoryModel;
+import tdc.edu.tromoiproject.Models.ProductModel;
+import tdc.edu.tromoiproject.Models.UserModel;
 
 public class TempConnectFireBase {
     public  static  void GetData(Context context){
