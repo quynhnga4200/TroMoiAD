@@ -1,7 +1,5 @@
 package tdc.edu.tromoiproject.Models;
 
-
-
 import java.util.ArrayList;
 
 public class UserModel {
