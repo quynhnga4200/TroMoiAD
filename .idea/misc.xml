@@ -3,11 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD.git/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD.git/app/src/main/res/layout/controller_layout.xml" value="0.10555555555555556" />
-        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD.git/app/src/main/res/layout/home_layout.xml" value="0.25" />
-        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD.git/app/src/main/res/layout/listview_layout.xml" value="0.17255434782608695" />
-        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD.git/app/src/main/res/layout/search_layout.xml" value="0.17255434782608695" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/activity_main.xml" value="0.1078125" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/chooseaddress_layout.xml" value="0.16" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/controller_layout.xml" value="0.1078125" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/dimen.xml" value="0.25" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/home_layout.xml" value="0.1078125" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/listmotelssearch_layout.xml" value="0.25" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/listview_layout.xml" value="0.1078125" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/motelinfo_layout.xml" value="0.25" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/postconfirm_layout.xml" value="0.25" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/postgetimages_layout.xml" value="0.25" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/postoptionbar_layout.xml" value="0.25" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/profile.xml" value="0.25" />
+        <entry key="..\:/Users/tranq/AndroidStudioProjects/TroMoiAD/app/src/main/res/layout/register_layout.xml" value="0.25" />
       </map>
     </option>
   </component>
