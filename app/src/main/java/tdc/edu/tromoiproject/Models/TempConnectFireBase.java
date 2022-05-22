@@ -1,4 +1,4 @@
-package vn.edu.tdc.projectandroid.Models;
+package tdc.edu.tromoiproject.Models;
 
 import android.content.Context;
 import android.util.Log;

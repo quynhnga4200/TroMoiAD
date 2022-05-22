@@ -1,7 +1,6 @@
-package vn.edu.tdc.projectandroid.Models;
+package tdc.edu.tromoiproject.Models;
 
-import com.google.firebase.auth.PhoneAuthOptions;
-import com.google.firebase.auth.UserInfo;
+
 
 import java.util.ArrayList;
 
