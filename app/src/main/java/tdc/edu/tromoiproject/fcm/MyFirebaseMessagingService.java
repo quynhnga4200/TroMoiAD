@@ -16,7 +16,7 @@ import tdc.edu.tromoiproject.MyApplication;
 import tdc.edu.tromoiproject.R;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
-
+    public static final String TAG = MyFirebaseMessagingService.class.getName();
     @Override
     public void onMessageReceived(@NonNull RemoteMessage message) {
         super.onMessageReceived(message);
@@ -43,5 +43,11 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         if (notificationManager != null){
             notificationManager.notify(1,notification);
         };
+    }
+
+    @Override
+    public void onNewToken(@NonNull String token) {
+        super.onNewToken(token);
+
     }
 }
