@@ -101,7 +101,7 @@ public class TempConnectFireBase {
 
             }
             } catch (Exception e) {
-            Log.i("IOException", e.getMessage());
+            Log.i("IOException", e.getMessage()) ;
 
         }
 
