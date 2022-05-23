@@ -17,7 +17,7 @@ import tdc.edu.tromoiproject.fcm.MyFirebaseMessagingService;
 
 public class MainActivity extends AppCompatActivity {
     AppCompatRadioButton btnChothue, btnOghep , btnPhong , btnCangho, btnCanghomini , btnNguyenCang;
-    private static final String TAG = MyFirebaseMessagingService.class.getName();
+    private static final String TAG = MainActivity.class.getName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
