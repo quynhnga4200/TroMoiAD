@@ -3,12 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/TroMoiAD.git/app/src/main/res/drawable/rdo_btn_center1_checked.xml" value="0.224" />
         <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/controller_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/home_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/listmotelssearch_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/listview_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/motelinfo_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/postoptionbar_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/TroMoiAD.git/app/src/main/res/layout/register_layout.xml" value="0.2" />
       </map>
     </option>
   </component>
