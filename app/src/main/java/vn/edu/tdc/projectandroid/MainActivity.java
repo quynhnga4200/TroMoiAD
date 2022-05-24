@@ -1,78 +1,102 @@
-package vn.edu.tdc.projectandroid;
+package tdc.edu.tromoiproject;
 
-import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
-
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatRadioButton;
 
+import android.graphics.Color;
+import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
 
-import vn.edu.tdc.projectandroid.Models.TempConnectFireBase;
-import vn.edu.tdc.projectandroid.databinding.ActivityMainBinding;
-
-import android.view.Menu;
-import android.view.MenuItem;
+import vn.edu.tdc.projectandroid.R;
 
 public class MainActivity extends AppCompatActivity {
-
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityMainBinding binding;
-
+    AppCompatRadioButton btnChothue, btnOghep , btnPhong , btnCangho, btnCanghomini , btnNguyenCang;
+    private static final String TAG = MainActivity.class.getName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.motelinfo_layout);
+        btnChothue = findViewById(R.id.btnChothue);
+        btnOghep = findViewById(R.id.btnOghep);
+        btnPhong = findViewById(R.id.btnPhong);
+        btnCangho = findViewById(R.id.btnCangho);
+        btnCanghomini = findViewById(R.id.btnCanghoMini);
+        btnNguyenCang = findViewById(R.id.btnNguyenCan);
+        FirebaseMessaging.getInstance().getToken()
+                .addOnCompleteListener(new OnCompleteListener<String>() {
+                    @Override
+                    public void onComplete(@NonNull Task<String> task) {
+                        if (!task.isSuccessful()) {
+                            Log.w(TAG, "Fetching FCM registration token failed", task.getException());
+                            return;
+                        }
 
+                        // Get new FCM registration token
+                        String token = task.getResult();
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+                        // Log and toast
 
-        setSupportActionBar(binding.toolbar);
+                        Log.d(TAG, token);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+                    }
+                });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+    public void onRadiobuttonChecked(View view){
+        boolean isSeleted = ((AppCompatRadioButton)view).isChecked();
+        switch (view.getId()){
+            case R.id.btnChothue:
+                if(isSeleted){
+                    btnChothue.setTextColor(Color.WHITE);
+                    btnOghep.setTextColor(Color.RED);
+                }
+                break;
+            case R.id.btnOghep:
+                if(isSeleted){
+                    btnChothue.setTextColor(Color.RED);
+                    btnOghep.setTextColor(Color.WHITE);
+                }
+                break;
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+            case R.id.btnPhong:
+                if(isSeleted){
+                    btnPhong.setTextColor(Color.WHITE);
+                    btnCangho.setTextColor(Color.RED);
+                    btnCanghomini.setTextColor(Color.RED);
+                    btnNguyenCang.setTextColor(Color.RED);
+                }
+                break;
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+            case R.id.btnCangho:
+                if(isSeleted){
+                    btnPhong.setTextColor(Color.RED);
+                    btnCangho.setTextColor(Color.WHITE);
+                    btnCanghomini.setTextColor(Color.RED);
+                    btnNguyenCang.setTextColor(Color.RED);
+                }
+                break;
+            case R.id.btnCanghoMini:
+                if(isSeleted){
+                    btnPhong.setTextColor(Color.RED);
+                    btnCangho.setTextColor(Color.RED);
+                    btnCanghomini.setTextColor(Color.WHITE);
+                    btnNguyenCang.setTextColor(Color.RED);
+                }
+                break;
+            case R.id.btnNguyenCan:
+                if(isSeleted){
+                    btnPhong.setTextColor(Color.RED);
+                    btnCangho.setTextColor(Color.RED);
+                    btnCanghomini.setTextColor(Color.RED);
+                    btnNguyenCang.setTextColor(Color.WHITE);
+                }
+                break;
         }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
     }
 }
