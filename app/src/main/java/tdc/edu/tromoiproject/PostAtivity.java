@@ -1,12 +1,21 @@
 package tdc.edu.tromoiproject;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatRadioButton;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
+
+public class PostAtivity extends AppCompatActivity {
     AppCompatRadioButton btnChothue, btnOghep , btnPhong , btnCangho, btnCanghomini , btnNguyenCang;
-    private static final String TAG = MainActivity.class.getName();
+    private static final String TAG = PostAtivity.class.getName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
