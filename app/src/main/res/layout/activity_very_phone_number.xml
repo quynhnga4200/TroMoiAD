@@ -38,8 +38,8 @@
             android:layout_marginTop="100dp"
             android:padding="20dp"
             android:id="@+id/forgetphone"
-            android:text="@string/forget"
-            android:textSize="20sp" />
+
+            android:hint="@string/forget"            android:textSize="20sp" />
         <Button
             android:id="@+id/veryphonenumber"
             android:layout_width="match_parent"

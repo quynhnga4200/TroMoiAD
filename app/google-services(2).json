@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "190164066516",
+    "project_id": "modulelogin-21831",
+    "storage_bucket": "modulelogin-21831.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190164066516:android:0ffe7ceb9addf0e15adb41",
+        "android_client_info": {
+          "package_name": "tdc.edu.tromoiproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190164066516-evi91ldol21imh3gr2t4o2nnb25f5a6e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tdc.edu.tromoiproject",
+            "certificate_hash": "6ac8405b4dc2181df965293cfc941586b9f55c03"
+          }
+        },
+        {
+          "client_id": "190164066516-p8cv6v7829v7qdf10ji9hpc68holig4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW-QJ9xTAhRoE8AU1KEV1wCUVc90gAi0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190164066516-p8cv6v7829v7qdf10ji9hpc68holig4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

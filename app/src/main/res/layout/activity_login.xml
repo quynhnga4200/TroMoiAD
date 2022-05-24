@@ -21,6 +21,7 @@
             android:src="@drawable/logo" />
 
         <EditText
+            android:id="@+id/TextMail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -35,6 +36,7 @@
             android:layout_marginBottom="15dp"
             android:ems="50"
             android:hint="Mat khau"
+            android:id="@+id/editpassword"
             android:inputType="textPassword"
             android:textAlignment="center"
             android:textSize="20sp" />
@@ -43,14 +45,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="15dp"
+            android:id="@+id/btnlogin"
             android:text="Đăng nhập" />
 
-        <TextView
+        <Button
+            android:id="@+id/textQuenPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:text="Quên mật khẩu?"
-            android:textColor="#1b75ca"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -79,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
-                android:text="Zalo" />
+                android:text="FaceBook" />
 
         </LinearLayout>
 
@@ -93,6 +98,7 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/edtDangKi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
