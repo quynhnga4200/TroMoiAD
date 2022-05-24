@@ -44,7 +44,7 @@
             android:id="@+id/veryphonenumber"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop=""
+
             android:textColor="@color/white"
             android:text="@string/veryphone"
             android:layout_gravity="center"
