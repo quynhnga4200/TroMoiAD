@@ -35,22 +35,20 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 //       DATA  messaging
         Map<String, String> stringMap = message.getData();
 
-        String id = stringMap.get("user_id");
+
         String email =  stringMap.get("user_email");
         String name =  stringMap.get("user_name");
-        String phone =  stringMap.get("user_phone");
-        String pass =  stringMap.get("user_password");
-        String avatar = stringMap.get("user_avatar");
-        sendNotification(id,email,name,phone,pass,avatar);
+
+        sendNotification(email,name);
     }
 
-    private void sendNotification(String id, String email, String name, String phone, String strTitle, String strMessage) {
+    private void sendNotification(String email, String name) {
         Intent intent = new Intent(this, MyApplication.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder builder = new
                 NotificationCompat.Builder(this, MyApplication.CHANNER_ID)
-                .setContentTitle(strTitle)
-                .setContentText(strMessage)
+                .setContentTitle(email)
+                .setContentText(name)
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentIntent(pendingIntent);
         Notification notification = builder.build();
