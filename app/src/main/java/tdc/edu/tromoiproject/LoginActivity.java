@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
     private void goToVerifyActivity() {
-        Intent intent = new Intent(this, VeryPhoneNumberActivity.class);
+        Intent intent = new Intent( this, VeryPhoneNumberActivity.class);
         startActivity(intent);
     }
     private void goToregisterActivity() {
