@@ -1,0 +1,15 @@
+[{
+    "user_id": 1,
+    "user_email": "thanh126126@gmail.com",
+    "user_name": "thanh",
+    "user_phone": "0376610701",
+    "user_password": "admin",
+    "user_avatar": "thanh.jpg"
+}, {
+    "user_id": 2,
+    "user_email": "wedontlike@gmail.com",
+    "user_name": "adx",
+    "user_phone": "0999999999",
+    "user_password": "1",
+    "user_avatar": "ac.jpg"
+}]
