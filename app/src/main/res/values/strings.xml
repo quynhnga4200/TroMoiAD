@@ -23,4 +23,10 @@
     <string name="luuy">(Lưu ý : Số nhà , tên đường chọn từ bảng đồ có thể không chính xác , nên bạn có thể chỉnh sửa nhập lại thủ công)</string>
     <string name="Email">Email: </string>
     <string name="Sodt">Số điện thoại: </string>
+    <string name="veryphone">Nhận mã OTP</string>
+    <string name="forget">Nhập Số điện thoại</string>
+    <string name="OTP">Nhập Số OTP</string>
+    <string name="VeryOTP">Xác minh OTP</string>
+    <string name="Fail"> gửi otb thất bại</string>
+
 </resources>
