@@ -49,7 +49,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/boder"
-            android:hint="@string/email" />
+            android:hint="@string/mane" />
 
         <EditText
             android:layout_width="match_parent"
@@ -57,7 +57,7 @@
             android:layout_weight="1"
             android:background="@drawable/boder"
             android:layout_margin="10dp"
-            android:hint="@string/mane" />
+            android:hint="@string/email" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="0dp"

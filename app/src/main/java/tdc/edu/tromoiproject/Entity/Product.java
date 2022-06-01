@@ -1,13 +1,11 @@
-package tdc.edu.tromoiproject.Models;
+package tdc.edu.tromoiproject.Entity;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.EnumMap;
 
-public class ProductModel {
+public class Product {
     public  static String[] Entilities = {"a","b","c","d","e","f","g","b"};
 
-    public  static ArrayList<ProductModel> productModels = new ArrayList<>();
+    public  static ArrayList<Product> productModels = new ArrayList<>();
     private int product_id;
     private  String product_title;
     private  String product_actor;
@@ -38,17 +36,17 @@ public class ProductModel {
 
 
     //contructor
-    public ProductModel(int product_id,
-                        String product_title,
-                        String product_actor,
-                        String phone_number,
-                        String arena,
-                        String address,
-                        ArrayList<String> product_image,
-                        String create_time,
-                        String description,
-                        int idcategory,
-                        ArrayList<String> entilities) {
+    public Product(int product_id,
+                   String product_title,
+                   String product_actor,
+                   String phone_number,
+                   String arena,
+                   String address,
+                   ArrayList<String> product_image,
+                   String create_time,
+                   String description,
+                   int idcategory,
+                   ArrayList<String> entilities) {
         CategoryModel categoryModel = CategoryModel.GetCategoryById(idcategory);
         if (categoryModel == null){
             return;
@@ -156,7 +154,7 @@ public class ProductModel {
     }
 
     //lấy danh sách product
-    public static  ArrayList<ProductModel> GetAll(){
+    public static  ArrayList<Product> GetAll(){
         return  productModels;
     }
     //Tao moi san pham
@@ -172,11 +170,11 @@ public class ProductModel {
 
     }
     //tim kiem san pham
-    public  static ArrayList<ProductModel> SearchProduct(String key){
+    public  static ArrayList<Product> SearchProduct(String key){
         //tao bien mang danh sach
-    ArrayList<ProductModel> productList = new ArrayList<>();
+    ArrayList<Product> productList = new ArrayList<>();
     //duyet vong forech tim kiem san pham
-        for (ProductModel productItem:
+        for (Product productItem:
              productModels) {
             if (productItem.address.contains(key)){
                 productList.add(productItem);
@@ -184,8 +182,8 @@ public class ProductModel {
         }
     return productList;
     }
-    public  static  ArrayList<ProductModel> Save(){
-        ArrayList<ProductModel> productList = new ArrayList<>();
+    public  static  ArrayList<Product> Save(){
+        ArrayList<Product> productList = new ArrayList<>();
         return  productList;
     }
 

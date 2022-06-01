@@ -1,4 +1,4 @@
-package tdc.edu.tromoiproject.Models;
+package tdc.edu.tromoiproject.Entity;
 
 import android.content.Context;
 import android.util.Log;
@@ -6,13 +6,8 @@ import android.util.Log;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-
-import tdc.edu.tromoiproject.Models.CategoryModel;
-import tdc.edu.tromoiproject.Models.ProductModel;
-import tdc.edu.tromoiproject.Models.UserModel;
 
 public class TempConnectFireBase {
     public  static  void GetData(Context context){
@@ -52,10 +47,10 @@ public class TempConnectFireBase {
                     //vòng lặp tiện ích
                     for (int k = 0;k <jsonProduct.getJSONArray("Entilities").length();k++){
                         int key = jsonProduct.getJSONArray("Entilities").getInt(k);
-                        entilities.add(ProductModel.Entilities[key]);
+                        entilities.add(Product.Entilities[key]);
                     }
                     // khởi tạo danh sách  sản phẩm
-                    ProductModel productModel =new ProductModel(productId,
+                    Product productModel =new Product(productId,
                             jsonProduct.get("product_title").toString(),
                             jsonProduct.get("product_actor").toString(),
                             jsonProduct.get("phone_number").toString(),
@@ -90,7 +85,7 @@ public class TempConnectFireBase {
             for (int i = 0; i < jsonUserArray.length(); i++) {
                 JSONObject jsonUser = jsonUserArray.getJSONObject(i);
                 int userId = Integer.parseInt(jsonUser.get("user_id").toString());
-                UserModel userModel = new UserModel(userId,
+                User userModel = new User(userId,
                         jsonUser.get("user_email").toString(),
                         jsonUser.get("user_name").toString(),
                         jsonUser.get("user_phone").toString(),

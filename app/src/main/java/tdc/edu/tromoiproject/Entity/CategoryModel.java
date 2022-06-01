@@ -1,4 +1,4 @@
-package tdc.edu.tromoiproject.Models;
+package tdc.edu.tromoiproject.Entity;
 
 import java.util.ArrayList;
 
@@ -7,12 +7,12 @@ public class CategoryModel {
     //khai bao
     private int category_id;
     private String category_name;
-    private ArrayList<ProductModel> productModels = new ArrayList<>();
+    private ArrayList<Product> productModels = new ArrayList<>();
 
 
     //Getter and Setter
 
-    public ArrayList<ProductModel> getProductModels() {
+    public ArrayList<Product> getProductModels() {
         return productModels;
     }
 
@@ -65,7 +65,7 @@ public class CategoryModel {
         return  categoryModels;
     }
     // lay san pham theo danh muc
-    public  static  ArrayList<ProductModel> GetProductByCategoryId(int id){
+    public  static  ArrayList<Product> GetProductByCategoryId(int id){
         CategoryModel categoryModel = GetCategoryById(id);
         return  categoryModel == null ? null: categoryModel.productModels;
     }
